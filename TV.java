@@ -16,38 +16,43 @@ public class TV {
     }
 
     public void setChannel(int newChannel) {
-        if (on && newChannel >= 1 && newChannel <= 120) //
+        if (on && newChannel >= 1 && newChannel <= 120) //akan berjalan jika sudah on dan angka tidak boleh lebih kecil dari 1 dan lebih besar dari 120
          {
             channel = newChannel;
         }
     }
 
     public void setVolume(int newVolumeLevel) {
-        if (on && newVolumeLevel >= 1 && newVolumeLevel <= 7) {
+        if (on && newVolumeLevel >= 1 && newVolumeLevel <= 7) //akan berjalan jika on dan tidak dibawah 1 dan diatas 7
+        {
             volumeLevel = newVolumeLevel;
         }
     }
 
     public void channelUp() {
-        if (on && channel < 120) {
-            channel++;
+        if (on && channel < 120) //akan berjalan jika on dan dibawah 120
+         {
+            channel++; //maka channel akan ditambah
         }
     }
 
     public void channelDown() {
-        if (on && channel > 1) {
-            channel--;
+        if (on && channel > 1) //jika on dan diatas 1 
+            {
+            channel--; //akan berkurang
         }
     }
 
     public void volumeUp() {
-        if (on && volumeLevel < 7) {
-            volumeLevel++;
+        if (on && volumeLevel < 7) //jika on dan dibawah 7
+             {
+            volumeLevel++; //vol akan bertambah
         }
     }
 
     public void volumeDown() {
-        if (on && volumeLevel > 1) {
+        if (on && volumeLevel > 1) //jika on dan vol diatas 1
+             {
             volumeLevel--;
         }
     }
